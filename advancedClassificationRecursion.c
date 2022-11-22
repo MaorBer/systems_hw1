@@ -17,6 +17,15 @@ int Armstrong(int x, int size) {
     }
 }
 
+int numOfDigits(int num) {
+    int result = 0;
+    while (num > 0) {
+        num = num / 10;
+        result++;
+    }
+    return result;
+}
+
 int isPalindrome(int num) {
     if (num == reverse(num)) {
         return 1;
