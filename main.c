@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "NumClass.h"
-
+//dsda
 int main() {
     int num1 = 0, num2 = 0;
     printf("Enter two numbers:\n");
