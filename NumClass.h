@@ -1,3 +1,7 @@
+#ifndef NumClass
+#define NumClass
+
+
 int isArmstrong(int);
 
 int numOfDigits(int);
@@ -13,3 +17,6 @@ int isStrong(int);
 int factorial(int);
 
 int reverse(int);
+
+
+#endif
