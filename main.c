@@ -1,12 +1,33 @@
- #include <stdio.h>
- 
- int main(){
-    int a,b;
-    printf("Please enter two numbers to add \n");
-    scanf("%d %d",&a,&b);
+#include <stdio.h>
+#include "NumClass.h"
 
-    printf("the sum is:%d\n\n", a+b);
-
-
-    return  0;
- }
+int main() {
+    int num1 = 0, num2 = 0;
+    printf("Enter two numbers:\n");
+    scanf("%i %i", &num1, &num2);
+    printf("\nThe Armstrong numbers are: ");
+    for (int i = num1; num1 <= i && i <= num2; i++) {
+        if (isArmstrong(i)) {
+            printf("%i ", i);
+        }
+    }
+    printf("\nThe Palindromes numbers are: ");
+    for (int i = num1; num1 <= i && i <= num2; i++) {
+        if (isPalindrome(i)) {
+            printf("%i ", i);
+        }
+    }
+    printf("\nThe Prime numbers are: ");
+    for (int i = num1; num1 <= i && i <= num2; i++) {
+        if (isPrime(i)) {
+            printf("%i ", i);
+        }
+    }
+    printf("\nThe Strong numbers are: ");
+    for (int i = num1; num1 <= i && i <= num2; i++) {
+        if (isStrong(i)) {
+            printf("%i ", i);
+        }
+    }
+    return 0;
+}

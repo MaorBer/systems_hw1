@@ -1,4 +1,4 @@
-int isArmstrong(int);       
+int isArmstrong(int);
 
 int numOfDigits(int);
 
