@@ -1,6 +1,7 @@
 #include <math.h>
 #include "NumClass.h"
 
+
 int isArmstrong(int num1) {
     int sum = 0, num = num1, Digits = numOfDigits(num1),curr;
     while (num > 0) {

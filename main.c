@@ -1,10 +1,11 @@
+#include <math.h>
 #include <stdio.h>
 #include "NumClass.h"
 
 int main() {
     int num1 = 0, num2 = 0;
     printf("Enter two numbers:\n");
-    scanf("%d %d", &num1, &num2);
+    scanf("%d %i", &num1, &num2);
     printf("\nThe Armstrong numbers are: ");
     for (int i = num1; num1 <= i && i <= num2; i++) {
         if (isArmstrong(i)) {
@@ -29,5 +30,7 @@ int main() {
             printf("%i ", i);
         }
     }
+    printf("\n");
+ 
     return 0;
 }

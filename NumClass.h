@@ -1,6 +1,3 @@
-#ifndef NumClass
-#define NumClass
-
 
 int isArmstrong(int);
 
@@ -19,4 +16,3 @@ int factorial(int);
 int reverse(int);
 
 
-#endif
