@@ -4,15 +4,14 @@
 
 int main() {
     int num1 = 0, num2 = 0;
-    printf("Enter two numbers:\n");
-    scanf("%d %i", &num1, &num2);
+    scanf("%i %i", &num1, &num2);
     printf("\nThe Armstrong numbers are:");
     for (int i = num1;  i <= num2; i++) {
         if (isArmstrong(i)) {
             printf(" %i", i);
         }
     }
-    printf("\nThe Palindromes numbers are:");
+    printf("\nThe Palindromes are:");
     for (int i = num1; i <= num2; i++) {
         if (isPalindrome(i)) {
             printf(" %i", i);
